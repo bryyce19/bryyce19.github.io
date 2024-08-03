@@ -1,18 +1,79 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | bryce's cool stuff</title>
+    <title>home | bryce</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="https://em-content.zobj.net/source/apple/271/house_1f3e0.png">
+</head>
 </head>
 <body>
-    <h1>bryce's cool shit</h1>
-        <p>this website is still in development. for game sites and links, see below.</p>
-        <ul>
-            <li><a href="/games" target="_blank">game site - version 1 (depricated)</a></li>
-            <li><a href="/games/404" target="_blank">updated game site - version 4 (coming soon)</a></li>
-            <br>
-            <li><a href="https://github.com/bryyce19" target="_blank">github profile</a></li>
-            <li><a href="mailto:brycemoyer1@gmail.com">email me</a></li>
-          </ul>               
+    <div class="header">
+    <h2><a href="https://github.com/bryyce19/" target="_blank" rel="noopener noreferrer">BRYCE</a></h2>
+    <div class="mid-spot" onclick="document.body.classList.toggle('gold');"></div>
+    <button class="contact-btn">
+      <span class="glow"></span>
+      <span class="contact-btn-content">contact me</span>
+    </button>
+  
+    <div class="spotlight">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  
+  <canvas id="particleCanvas"></canvas>
+  
+  <div class="accent-lines">
+    <div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <section id="section1">
+  <div class="heroSubP">
+    <p>bryce's cool shit</p>
+  </div>
+  <div class="hero">
+    <div class="heroT">
+      <h2>welcome.</h2>
+      <h2>welcome.</h2>
+    </div>
+  </div>
+  <p class="heroP">everything you need. <br>
+    games, scripts, & more.</p>
+  </section>
+  <div class="mountains">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="hero-spacer"></div>
+  
+  <div class="content-section">
+    <div class="content-acc">
+      <div></div>
+      <div></div>
+    </div>
+    <section id="section2">
+    <p class="subt">Revolutionary by design</p>
+    <h3 class="title">Harness. Empower.<br>
+      Unmatched Versatility.</h3>
+    <p class="subp">At the core lies our revolutionary framework, <br>ensuring adaptability across all application architectures.</p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
