@@ -123,7 +123,6 @@ button.contact-btn {
     
     border: 1px solid #c2ccff33;
     opacity: 1;
-    padding-top: 0.3em;
 
     background: #121521;
     color: #9dc3f7;
@@ -156,7 +155,7 @@ button.contact-btn:hover::before {
     pointer-events: none;
 }
 button.contact-btn:hover .glow {
-    --loop-cycle: 2s;
+    --loop-cycle: 4s;
 }
 .contact-btn .glow::after, .contact-btn .glow::before {
     content: "";
@@ -181,11 +180,12 @@ button.contact-btn:hover .glow {
     }    
 }
 .contact-btn-content {
-    background: linear-gradient(0deg, #d8ecf8, #98c0ef);
+    background: linear-gradient(0deg, #d8ecf8, #81b5f1);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 142%;
+    font-family: Untitled Sans, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
 }
 button.contact-btn:hover .glow::after, button.contact-btn:hover .glow::before {
     opacity: 0.6;
