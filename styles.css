@@ -120,9 +120,7 @@ button.contact-btn {
     border-radius: 20em;
     border: none;
     transition: background 0.5s, transform 0.5s;
-    
-    border: 1px solid #c2ccff33;
-    opacity: 1;
+    top: 19px;
 
     background: #121521;
     color: #9dc3f7;
