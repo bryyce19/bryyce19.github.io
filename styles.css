@@ -666,7 +666,7 @@ p {
 }
 
 .project-heading {
-    margin: 0.4em 0 0.6em 0;
+    margin: 0.8em 0 0.6em 0;
     font-size: 2.3em;
     font-weight: 600;
     color: #d8ecf8;
@@ -686,3 +686,114 @@ p {
     margin: auto;
     text-align: center;
 }
+
+.footer-glass {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #434954;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: Untitled Sans, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+}
+
+.status-tag {
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    color: rgb(85, 234, 85);
+    font-weight: bold;
+}
+
+.status-indicator {
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #00ff00; /* Green as an example */
+    border-radius: 50%;
+    margin-right: 10px;
+    animation: pop-glow 3s infinite;
+}
+
+@keyframes pop-glow {
+    0%, 100% {
+        box-shadow: 0 0 0px rgba(0, 255, 0, 0);
+        transform: scale(1);
+    }
+    50% {
+        box-shadow: 0 0 15px 8px rgba(0, 255, 0, 0.5);
+        transform: scale(1.1);
+    }
+}
+
+.socials {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+}
+
+.socials .link {
+    margin: 0 15px;
+    font-size: 24px;
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.socials .link:hover {
+    animation: jiggle 0.3s infinite;
+    color:#98c0ef;
+}
+
+@keyframes jiggle {
+    0%, 100% {
+        transform: rotate(-3deg);
+    }
+    25% {
+        transform: rotate(3deg);
+    }
+    50% {
+        transform: rotate(-3deg);
+    }
+    75% {
+        transform: rotate(3deg);
+    }
+}
+
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.links a {
+    margin-right: 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #98c0ef;
+}
+
