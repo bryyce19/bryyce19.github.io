@@ -82,3 +82,12 @@ window.addEventListener('resize', onResize);
 
 initParticles();
 animate();
+
+// Popup for coming soon lowkey stuff
+function showPopup() {
+    document.getElementById('popup').style.display = 'flex';
+}
+
+function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+}

@@ -5,6 +5,7 @@ html, body { height: 100%; }
 html::-webkit-scrollbar { display: none; }
 html { -ms-overflow-style: none; scrollbar-width: none; }
 
+
 body {
     margin: 0;
     font-family: Untitled Sans, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
@@ -46,6 +47,7 @@ body.gold .content-section ::after{
 h2 {
     font-family: 'Hubot-Sans', sans-serif;
 }
+
 h2, p {
     margin: 0; padding: 0;
 }
@@ -128,6 +130,7 @@ button.contact-btn {
     background: #121521;
     color: #9dc3f7;
     white-space:nowrap;
+    font-family: Untitled Sans, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
 
 }
 button.contact-btn::before {
@@ -660,4 +663,26 @@ p {
     inset 0em 0em 0em 2px #c2ccff,
     inset 0.2em 0.3em 0.2em -0.2em #c2ccff,
     inset 10.8em 11.3em 2em -10.5em #d4e6ff2f;
+}
+
+.project-heading {
+    margin: 0.4em 0 0.6em 0;
+    font-size: 2.3em;
+    font-weight: 600;
+    color: #d8ecf8;
+    text-shadow: 0 2px 16px rgba(174, 207, 242, .24);
+    background: linear-gradient(0deg, #d8ecf8 0, #98c0ef 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.subproject {
+    color: #d8ecf8be;
+    font-size: 1em;
+    font-weight: 400;
+    max-width: 26em;
+    margin: auto;
+    text-align: center;
 }

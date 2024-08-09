@@ -4,19 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home | bryce</title>
+    <!-- linking main style -->
     <link rel="stylesheet" href="styles.css">
+    <!-- linking swiper wrapper style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- linking swiperjs style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="icon" type="image/x-icon" href="https://em-content.zobj.net/source/apple/271/house_1f3e0.png">
     <meta property="og:title" content="bryce's hub" />
     <meta property="og:site_name" content="bryce's hub" />
-    <meta property="og:description" content="welcome to bryce's hub, a home for all my repos." />
-    <meta name="description" content="welcome to bryce's hub, a home for all my repos." />
+    <meta property="og:user-profession" content="welcome to bryce's hub, a home for all my repos." />
+    <meta name="user-profession" content="welcome to bryce's hub, a home for all my repos." />
     <meta name="author" content="bryce" />
     <meta property="og:image" content="logo.png">
 </head>
 
 <body>
     <div class="header">
-    <h2><a href="https://github.com/bryyce19/" target="_blank" rel="noopener noreferrer">BRYCE</a></h2>
+    <h2 id="name"><a href="https://github.com/bryyce19/" target="_blank" rel="noopener noreferrer">BRYCE</a></h2>
     <div class="mid-spot" onclick="document.body.classList.toggle('gold');"></div>
     
     <a target="_blank" href="https://discordapp.com/users/842499501192904766">
@@ -83,6 +88,75 @@
     </section>
   </div>
 
+  <div class="container swiper">
+    <h3 class="project-heading">projects</h3>
+    <p class="subproject">all the games, scripts, repos, and random stuff. </p>
+    <br>
+    <br>
+    <div class="slider-wrapper">
+      <div class="card-list swiper-wrapper">
+        <div class="card-item swiper-slide">
+          <div class="tag">✨ newest release</div> <!-- new version tag lmao -->
+          <img src="img/v5.png" alt="User Image" class="user-image">
+          <h2 class="user-name">Games v2</h2>
+          <p class="user-profession">The best games, interface, and tools of all time, packed into one small website.
+          </p>
+          <a href="https://bryyce19.github.io/gamesx" target="_blank"><button class="message-button">Start Playing</button></a>
+        </div>
+        <div class="card-item swiper-slide">
+          <img src="img/v1.png" alt="User Image" class="user-image">
+          <h2 class="user-name">Games v1</h2>
+          <p class="user-profession">The first ever website I released with games and tools, plus, a well-known interface.</p>
+          <a href="https://bryyce19.github.io/games" target="_blank"><button class="message-button">Start Playing</button></a>
+        </div>
+        <div class="card-item swiper-slide">
+          <div class="tag">🚀 coming soon</div> <!-- new version tag lmao -->
+          <img src="img/bolt.png" alt="User Image" class="user-image">
+          <h2 class="user-name">Lightning Proxy</h2>
+          <p class="user-profession">A super fast proxy, serving you unrestricted internet access on any device.</p>
+          <button class="message-button" onclick="showPopup()">Start Searching</button>
+          <p style="font-size: xx-small;"><i>Being built right now.</i></p>
+              <!-- Popup -->
+          <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <p><b>coming soon!</b><br><br>
+                i'm still making it rn, itll be done soon though</p>
+            </div>
+        </div>
+        </div>
+        <div class="card-item swiper-slide">
+          <div class="tag">🚀 coming soon</div> <!-- new version tag lmao -->
+          <img src="img/scripts.png" alt="User Image" class="user-image">
+          <h2 class="user-name">Scripts & Cheats</h2>
+          <p class="user-profession">If you know how to use the console, you'll have a bunch of fun with these.</p>
+          <button class="message-button">Find Scripts</button>
+          <p style="font-size: xx-small;"><i>Being built after proxy is complete.</i></p>
+        </div>
+        <div class="card-item swiper-slide">
+          <img src="img/soon.png" alt="User Image" class="user-image">
+          <h2 class="user-name">To be Announced</h2>
+          <p class="user-profession">To be Announced</p>
+          <button class="message-button">TBA</button>
+        </div>
+        <div class="card-item swiper-slide">
+          <img src="img/soon.png" alt="User Image" class="user-image">
+          <h2 class="user-name">To be Announced</h2>
+          <p class="user-profession">To be Announced</p>
+          <button class="message-button">TBA</button>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-slide-button swiper-button-prev"></div>
+      <div class="swiper-slide-button swiper-button-next"></div>
+    </div>
+  </div>
+  <!-- Linking SwiperJS script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Linking custom script -->
+  <script src="slider.js"></script>
+  <!-- Linking custom script -->
   <script src="script.js"></script>
+
 </body>
 </html>
