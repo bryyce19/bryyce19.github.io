@@ -91,3 +91,12 @@ function showPopup() {
 function closePopup() {
     document.getElementById('popup').style.display = 'none';
 }
+
+const starsContainer = document.querySelector('.stars-container');
+
+// Create multiple stars
+for (let i = 0; i < 4; i++) { // Number of stars
+    const star = document.createElement('div');
+    star.classList.add('star');
+    starsContainer.appendChild(star);
+}
